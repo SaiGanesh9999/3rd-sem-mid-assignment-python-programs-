@@ -8,3 +8,9 @@ def is_leap(year):
         if year%4==0:
             leap = True
     return leap
+
+year_start = int(input())
+year_end = int(input())
+for i in range(year_start,year_end):
+    if is_leap(i):
+        print(i)
